@@ -42,9 +42,9 @@ public class GameManager : MonoBehaviour
         }
 
         //Get Selected Car
-        selectedCar = PlayerPrefs.GetInt("SelectCar");
+        //selectedCar = PlayerPrefs.GetInt("SelectCar");
 
-        Instantiate(Player[selectedCar], playerStartPos, Quaternion.identity);
+       // Instantiate(Player[selectedCar], playerStartPos, Quaternion.identity);
     }
 
     // Start is called before the first frame update

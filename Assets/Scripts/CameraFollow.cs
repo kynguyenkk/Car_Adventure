@@ -9,15 +9,15 @@ public class CameraFollow : MonoBehaviour
     Vector3 distance;
     public float followSpeed;
 
-    [SerializeField]
-    [Range(0f, 1f)]
-    float lerpTime;
+    //[SerializeField]
+    //[Range(0f, 1f)]
+    //float lerpTime;
 
-    [SerializeField] Color[] myColors;
+    //[SerializeField] Color[] myColors;
 
-    //int myColorIndex = 0;
-    float change = 0f;
-    int len;
+    ////int myColorIndex = 0;
+    //float change = 0f;
+    //int len;
 
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class CameraFollow : MonoBehaviour
     {
        // target = GameObject.FindWithTag("Car4").transform;
         distance = target.position - transform.position;
-        len = myColors.Length;
+        //len = myColors.Length;
 
     }
 
@@ -38,15 +38,15 @@ public class CameraFollow : MonoBehaviour
         }
 
       //  Camera.main.backgroundColor = Color.Lerp(Camera.main.backgroundColor, myColors[myColorIndex], lerpTime * Time.deltaTime);
-        change = Mathf.Lerp(change, 1f, lerpTime * Time.deltaTime);
+        //change = Mathf.Lerp(change, 1f, lerpTime * Time.deltaTime);
 
-        if (change > 0.9f)
-        {
-            change = 0f;
+        //if (change > 0.9f)
+        //{
+        //    change = 0f;
        //     myColorIndex++;
         //    myColorIndex = (myColorIndex >= len) ? 0 : myColorIndex;
 
-        }
+        //}
     }
 
     void Follow()

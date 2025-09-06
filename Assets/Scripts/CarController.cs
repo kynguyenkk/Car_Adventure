@@ -9,7 +9,7 @@ public class CarController : MonoBehaviour
 
     void Update()
     {
-        if(GameManager.instance.isGameStarted)
+        if (GameManager.instance.isGameStarted)
         {
             Move();
             CheckInput();
